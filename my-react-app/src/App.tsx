@@ -41,13 +41,22 @@ function App() {
                 <button
                   key={item}
                   onClick={() => handleRatingClick(item)}
-                  // className="hover:cursor-pointer hover:bg-orange-500 hover:text-gray-950 text-xs font-medium text-gray-500 bg-gray-800 w-7 h-7 p-4.5 rounded-full flex justify-center items-center">
-                  className={`
-                  hover:bg-orange-500 hover:text-white 
-                  text-gray-500 
-                  ${rating === item ? 'bg-gray-500 text-white' : 'bg-gray-800'} 
-                  w-10 h-10 rounded-full flex justify-center items-center transition-colors
-                `}
+                  className="hover:cursor-pointer
+                  focus:bg-gray-100
+                  focus:text-gray-950
+                   hover:bg-orange-500
+                    hover:text-gray-950 
+                    text-xs font-medium
+                     text-gray-500
+                      bg-gray-800
+                       w-7 h-7 p-4.5 rounded-full
+                        flex justify-center items-center"
+                  //   className={`
+                  //   hover:bg-orange-500 hover:text-white
+                  //   text-gray-500
+                  //   ${rating === item ? 'bg-gray-500 text-white' : 'bg-gray-800'}
+                  //   w-10 h-10 rounded-full flex justify-center items-center transition-colors
+                  // `}
                 >
                   {item}
                 </button>
